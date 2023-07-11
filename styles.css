@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/bg.jpg); 
+}
+html::-webkit-scrollbar{
+  width: 9px;
+  }
+  html::-webkit-scrollbar-thumb{
+    background:#2229;
+    border-radius: 10px;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover{
+    background: #2227;
+  }
+  html::-webkit-scrollbar-track{
+    background:#8888;
+    
+  }
+
+/* ------------  header ------------- */
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: black;
+  width: 90%;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* -------------  clock -------------  */
+
+.clock-container {
+ width : 100px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 10px;
+  font-size: 25px;
+  transition: padding 0.3s;
+  font-family: 'VT323', monospace;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+}
+
+.clock-container:hover {
+  padding: 5px
+}
+
+#clock-container{
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.btn-container{
+  margin-top: 20px;
+  width: 80px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-container .icon{
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+}
+.btn-container .icon span{
+  height: 25px;
+  width: 25px;
+  display: block;
+  background: none;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.btn-container .icon span i{
+  font-size: 40px;
+  line-height: 20px;
+  transition: all 0.5s;
+}
+.btn-container .icon span i:hover{
+  font-size: 45px;
+}
+.btn-container .icon .tooltip{
+  position: absolute;
+  bottom: 85px;
+  left: 185px;
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+  border: 5px solid black;
+  font-size: 20px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+ opacity: 0;
+pointer-events: 0;
+transition: all 0.8s;
+font-family: sans-serif;
+font-weight: 600;
+}
+
+.btn-container .icon:hover .tooltip{
+opacity: 1;
+pointer-events: 1;
+}
+
+.btn-container .icon:hover span,
+.btn-container .icon:hover .tooltip{
+text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+/* ------------ game ------------  */
+
+.game-container {
+width: 600px;
+ margin-left: 120px;
+}
+
+h1 {
+  width: 100px;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  transition: padding, 0.2s;
+}
+
+.game-over {
+  background: linear-gradient(rgba(238, 17, 17, 0.7),rgba(238,17,17,0.7));
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px rgb(111, 107, 107);
+  background-color: rgb(248, 242, 242);
+}
+
+.btn:hover {
+  padding: 4px 4px 4px 4px;
+
+}
+
+/* ----------------   description ----------------- */
+
+.scroll-bg{
+  width: 300px;
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+  margin: 10% 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.scroll-div{
+  width: 300px;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+.scroll-object{
+  color: rgb(246, 252, 240);
+  font-size:18px;
+padding: 10px;
+font-family: sans-serif;
+}
+.scroll-object h3, .scroll-object p{
+  margin-bottom: 10px;
+}
+
+.scroll-object h3{
+  text-decoration: underline;
+}
+.pattern{
+  width: auto;
+  height: auto;
+}
+
+.scroll-div::-webkit-scrollbar{
+width: 9px;
+}
+.scroll-div::-webkit-scrollbar-thumb{
+  background:#2229;
+  border-radius: 20px;
+}
+
+.scroll-div::-webkit-scrollbar-thumb:hover{
+  background: #2227;
+}
+.scroll-div::-webkit-scrollbar-track{
+  background:#8888;
+  border-radius: 20px;
+}

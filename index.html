@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press Any Key to Start</h1>
+  <div class="container">
+    <div id="clock-container">
+
+      <div class="clock-container" type = "button">
+        <h1 class="js-hour clock-styling">00</h1>
+        <h1 class=" clock-styling">:</h1>
+        <h1 class="js-minute clock-styling">00</h1>
+        <h1 class=" clock-styling">:</h1>
+        <h1 class="js-second clock-styling">00</h1>
+      </div>
+      <div class="btn-container">
+
+          <div class="icon">
+            <span><i class="fa-solid fa-stopwatch fa-2xl" id="start-watch"></i></span>
+            <div class="tooltip">Start</div>
+          </div>
+          <div class="icon">
+            <span><i class="fa-solid fa-stopwatch-20" id="stop-watch"></i></span>
+            <div class="tooltip">Stop</div>
+          </div>
+      
+        <!-- <Button id = "start-watch" class=" fa-solid fa-stopwatch"></Button>
+        <button id = "stop-watch" class="fa-duotone fa-stopwatch"></button>    -->
+      </div>
+    </div>
+    <div class="game-container">
+
+      <div class="row">
+  
+        <div type="button" id="green" class="btn green js-btn-green">
+  
+        </div>
+  
+        <div type="button" id="red" class="btn red js-btn-red">
+  
+        </div>
+      </div>
+  
+      <div class="row">
+  
+        <div type="button" id="yellow" class="btn yellow js-btn-yellow">
+  
+        </div>
+        <div type="button" id="blue" class="btn blue js-btn-blue">
+  
+        </div>
+  
+      </div>
+  
+    </div>
+    <div class="scroll-bg">
+      <div class="scroll-div">
+        <div class="scroll-object">
+          <h3>About this Game</h3>
+          <P>This game is designed by using HTML,CSS and 
+            javascript functionalities.
+            The game contains all the functionalities of 
+            a Simon Game.
+            The computer is programmed to pick colours from one of 
+            the given colours<strong>(Red,Green,Yellow,Blue)</strong> in a pattern,
+            as the game progress if also checks what colour is picked by the user,
+            and what is the pattern of the user colour choices.
+            Each of the four colour acts as a button when a user clicks 
+            a buttons it is detected by the computer by which the computer decides 
+            what action to take next by running it with the given code.
+          </P>
+<h3>How to play the Simon Game?</h3>
+<p>Press any key on the QWERTY keypad to start the game,
+ the computer will pick a colour[Red], then click on the same button [Red]
+ now the computer will check if you pick the right colour or not. If you pick the right colour(same as computer)
+ then the computer will pick the next colour [green], now you have to memorise the pattern in which the colours has been picked 
+ and the press the buttons in the same pattern as the computer[red, green]
+</p>
+<p><strong>for example:</strong></p>
+<P>computer = [Red] then you = [Red]</P>
+<p>computer = [Green] then you = [Red,Green]</p>
+<p>with each user click the computer will check the pattern with computer pattern.
+  If the pattern match the game will continue, if the user click the wrong button the game will be over and the user has to restart the game.
+  with each correctly guessed pattern the level will increase.
+</p>
+<h3>The Website contains a clock which also acts as stop-watch.
+</h3>
+<p>If you click the start button the stopwatch starts and when you click the stop button it stops the can be restarted from the 
+  previous time with the start button.</p>
+  <P>If the user click on the watch if starts to functions as a normal digital clock and resets the stopwatch</P>
+  <P>These are the following functions of the website.</P>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+<script src="game.js"></script>
+<script src="clock.js"></script>
+<script src="https://kit.fontawesome.com/5c120b9811.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
